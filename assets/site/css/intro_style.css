@@ -1,0 +1,251 @@
+/****************** FONTS *******************/
+/*@font-face {
+	font-family: '';
+	src: local(''), 
+	url(fonts/.);
+}*/
+@font-face {
+	font-family: 'Calibri';
+	src: url('fonts/8277.ttf') format('truetype');
+	font-weight:400
+}
+@font-face {
+	font-family: 'Calibri';
+	src: url('fonts/19901.ttf') format('truetype');
+	font-weight:700
+}
+@font-face {
+	font-family: 'Segoe';
+	src: url('fonts/10389.ttf') format('truetype');
+	font-weight:400
+}
+@font-face {
+	font-family: 'Segoe';
+	src: url('fonts/10391.ttf') format('truetype');
+	font-weight:700
+}
+/****************** FONTS - END *******************/
+body{
+	background-color:#e7ded5;
+	margin:0px;
+}
+a, a:hover{
+	text-decoration:none;
+	color:white;
+}
+.intro_div{
+	width:100%;
+	height: 100vh;
+	max-height: auto;
+	background-color:#e7ded5;
+	position:relative;
+	
+	
+}
+.intro{
+	width:100%;
+	height:100%;
+	max-width: auto;
+	margin:0px auto;
+	font-size:0px;
+	position:relative;
+	overflow:hidden;
+}
+
+
+
+.intro_lang{
+	position:absolute;
+	text-align:left;
+	width:100%;
+	top:15px;
+	z-index:3;
+	padding: 15px;
+}
+.intro_lang a{
+	background-color:#1b4e9b;
+	border:2px solid white;
+	border-radius:5px;
+	padding:5px;
+	font-size:25px;
+	font-family: 'Calibri';
+	font-weight:700;
+	transition:color 0.5s;
+	
+}
+.intro_lang a:hover{
+	color:yellow;
+}
+.intro_bottons_block{
+	position:absolute;
+	z-index:3;
+	text-align:center;
+	width:100%;
+	height:1px;
+	top:calc(50% - 100px);
+	text-align:center;
+}
+.intro_bottons_block a {
+	font-family: 'Calibri';
+	font-weight:700;
+	font-size:15px;
+	margin: 55px 15px;
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size:100%;
+	display: inline-block;
+	vertical-align:bottom;
+}
+@keyframes button_a_r {
+	from {transform:rotate(0deg);}
+	to {transform:rotate(360deg);}
+}
+@keyframes button_a_b {
+	from {transform:rotate(0deg);}
+	to {transform:rotate(-360deg);}
+}
+
+.red_button{
+	background-image:url(../images/intro/R_B.png);
+	width: 100px;
+    height: 30px;
+    padding: 15px;
+	padding-top: 20px;
+	transition: all 2s;
+}
+.red_button:hover{
+	animation: button_a_r 2s linear infinite;
+}
+.blue_button{
+	background-image:url(../images/intro/B_B.png);
+	width: 100px;
+    height: 30px;
+    padding: 15px;
+	padding-top: 20px;
+	transition: all 2s;
+}
+.blue_button:hover{
+	animation: button_a_b 2s linear infinite;
+}
+.blue_button a{
+	font-size:17px
+}
+.intro_bottons_block a.blue_button, .intro_bottons_block a.red_button{
+	margin-top: 10px ;
+}
+
+.center_a{
+		font-family: 'Calibri';
+	font-weight:700;
+	text-align:center;
+	display: inline-block;
+	font-size:20px;
+	background-color:#ffcc00;
+	border:4px solid white;
+	border-radius:50%;
+	width: 150px;
+    height: 150px;
+    padding: 10px;
+	transition: background-color 0.5s;
+	overflow:hidden;
+}
+
+.center_a img{
+	width:50px;
+}
+.center_a b{
+	display: block;
+    width: fit-content;
+    margin: 0px 0px;
+    margin-left: -14px;
+    background-color: white;
+    position: relative;
+    font-size: 28px;
+    white-space: nowrap;
+    padding: 1px 5px;
+	cursor:default;
+	
+	
+}
+.center_a p{
+	position:relative;
+	margin:5px;
+	font-size:18px;
+	color:white;
+	cursor:default;
+	
+}
+.center_a_a {
+    color: black;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+.center_a_a:hover{
+	 color: black;
+	 
+}
+.center_a_a:hover .center_a{
+	background-color:#278bff;
+}
+.eng_fix b{
+	 font-size: 21px;
+    padding: 6px 5px;
+}
+
+.intro_video{
+	position: relative;
+    width: 100%;
+    max-width: auto;
+    margin: 0px auto;
+	height:100vh;
+	overflow:hidden;
+	
+}
+#myVideo {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+	height:100vh;
+	filter: contrast(0.7);
+    
+}
+@media screen and (max-width: 1400px) and (min-width: 1000px ) and (min-height: 630px ) {
+}
+
+@media screen and (max-width: 1000px) {
+
+	.intro_lang {
+	//	position: relative;
+	}
+	.intro_bottons_block {
+	//	position: relative;
+	//	height:auto;
+	//	top: 15px;
+	//	margin-bottom: 30px;
+		
+	}
+	
+	
+	
+	
+	
+}
+@media screen and (max-width: 720px) {
+	
+	
+}
+@media screen and (max-width: 566px) {
+	.intro_bottons_block a{
+		display:block;
+	margin:0px auto;}
+	#myVideo {
+		width:auto;
+		height:130vh;
+		margin-left: calc(0px - 50vw);
+		}
+		
+}
+@media screen and (max-width: 425px) {
+	
+}
